@@ -1,0 +1,24 @@
+{
+  "name": "malloy",
+  "version": "0.0.1",
+  "description": "Malloy is a cub logging lib",
+  "main": "malloy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torokmark/malloy.git"
+  },
+  "keywords": [
+    "malloy",
+    "logging",
+    "log"
+  ],
+  "author": "Mark Torok",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torokmark/malloy/issues"
+  },
+  "homepage": "https://github.com/torokmark/malloy#readme"
+}
