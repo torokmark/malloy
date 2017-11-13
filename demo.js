@@ -1,6 +1,7 @@
 
-var Malloy = require('malloy');
+var malloy = require('malloy'),
+    configmalloy = require('malloy').adopt({});
 
-console.log(Malloy);
+console.log(malloy);
 
-Malloy.says("hello");
+malloy.says("hello");
