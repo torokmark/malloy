@@ -4,4 +4,5 @@ var malloy = require('malloy'),
 
 console.log(malloy);
 
-malloy.says("hello");
+malloy.says("hello", {level : 'Woody', filename: __filename });
+malloy.toWoody("hola", {})

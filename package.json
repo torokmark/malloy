@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/torokmark/malloy/issues"
   },
-  "homepage": "https://github.com/torokmark/malloy#readme"
+  "homepage": "https://github.com/torokmark/malloy#readme",
+  "dependencies": {
+    "dateformat": ">=3.0.2",
+    "colors": ">=1.1.2"
+  }
 }

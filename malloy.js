@@ -3,20 +3,27 @@
 // Version: 0.0.1
 // Liscence: MIT
 
-var path = require('path');
+var path = require('path'),
+    dateFormat = require('dateformat'),
+    colors = require('colors');
 
 var Malloy = function Malloy(config) {
-  var that = this,
-  
-  that.format = function() {
-    // [level] date time path :: message
-    return true;
-  }
+  var that = this;
+  // file : __filename
+  // style: brickleberry vs formal
+  // dateformat
 }
 
 Malloy.prototype.says = function(msg, config) {
-  this.print
+  console.log('| ' + colors.yellow(config.level) + ' | ' + dateFormat(Date.now(), 'dd.mm.yyyy hh:MM:ss') + ' | ' + config.filename + ' >> ' + msg);
 }
+
+Malloy.prototype.saysToWoody = function(msg, config) {
+  config.level = 'Woody';
+  this.says(msg, config);
+}
+Malloy.prototype.toWoody = Malloy.prototype.saysToWoody;
+
 
 
 
