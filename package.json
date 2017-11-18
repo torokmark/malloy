@@ -21,8 +21,16 @@
     "url": "https://github.com/torokmark/malloy/issues"
   },
   "homepage": "https://github.com/torokmark/malloy#readme",
-  "dependencies": {
+  "devDependencies": {
     "dateformat": ">=3.0.2",
-    "colors": ">=1.1.2"
+    "colors": ">=1.1.2",
+    "mocha": ">=2.0.1"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "start": "node demo",
+    "test": "mocha test/"
   }
 }

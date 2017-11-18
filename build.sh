@@ -2,4 +2,5 @@
 
 sudo npm link
 sudo npm link malloy
-nodejs demo.js
+
+npm run start
