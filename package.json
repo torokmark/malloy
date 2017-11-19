@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Malloy is a cub logging lib",
   "main": "malloy",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/torokmark/malloy.git"
@@ -23,14 +20,12 @@
   "homepage": "https://github.com/torokmark/malloy#readme",
   "devDependencies": {
     "dateformat": ">=3.0.2",
-    "colors": ">=1.1.2",
-    "mocha": ">=2.0.1"
+    "colors": ">=1.1.2"
   },
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "start": "node demo",
-    "test": "mocha test/"
+    "start": "node demo"
   }
 }
