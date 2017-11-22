@@ -19,7 +19,7 @@ npm install malloy
 
 ```
 var malloy = require('malloy');
-    adoptedMalloy = require('malloy').adopt({location: __filename, park: 'yellowstone', storage: '/home/mint/log.out', dateformat: 'isoTime'});
+    adoptedMalloy = require('malloy').adopt({location: __filename, park: 'yellowstone', storage: '/home/username/log.out', dateformat: 'isoTime'});
 
 malloy.says('hello');
 malloy.says('hello', {to: 'denzel'});
@@ -33,7 +33,7 @@ malloy.saysToSteve('ohh it is severe!', {park: 'brickleberry'});
 malloy.toDenzel('an animal like bug is over there', {animal: 'bug'} );
 malloy.saysToDenzel('an animal like deer is not shown', {animal: 'deer'} );
 malloy.toEthel('In Yellowstone', {park: 'yellowstone'});
-malloy.toSteve('In Brickleberry', {park: 'brickleberry', storage: '/home/mint/log.out'});
+malloy.toSteve('In Brickleberry', {park: 'brickleberry', storage: '/home/username/log.out'});
 
 adoptedMalloy.toEthel('Ethel, what are you doing here?', {location: __filename, dateformat: 'isoDate'});
 adoptedMalloy.toDenzel('Denzel is here and shown ', {animal: 'bug'});
