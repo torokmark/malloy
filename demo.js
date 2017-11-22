@@ -7,7 +7,7 @@ malloy.says('hello');
 malloy.says();
 malloy.says('data go to', {location: 'file...'});
 malloy.says('hello', {to: 'denzEl'});
-malloy.says('just in the air', {to: 'ddddenzEl'});
+malloy.says('just in the air', {to: 'denzEl'});
 malloy.says('something in', {park: 'yellowstone'});
 malloy.says('something else in', {park: 'brickleberry'});
 

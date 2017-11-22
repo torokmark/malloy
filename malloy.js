@@ -5,8 +5,7 @@
 
 var path = require('path'),
     fs = require('fs'),
-    dateFormat = require('dateformat'),
-    colors = require('colors');
+    dateFormat = require('dateformat');
 
 var Malloy = function Malloy(config) {
   var that = this;
@@ -33,7 +32,7 @@ var Malloy = function Malloy(config) {
     }
   }
 
-  that.buildFullMsg = function(msg, to, config) {
+  that.buildFullMsgInYellowstone = function(msg, to, config) {
     var config = config || {},
         log = '| ',
         to = to.toUpperCase(),
@@ -41,18 +40,7 @@ var Malloy = function Malloy(config) {
         location = config.location || that.defaults.location,
         park = config.park || that.defaults.park;
 
-    switch (to) {
-      case 'DENZEL':
-        log += colors.magenta(getDialect(to, park)); break;
-      case 'WOODY':
-        log += colors.yellow(getDialect(to, park)); break;
-      case 'ETHEL':
-        log += colors.red(getDialect(to, park)); break;
-      case 'STEVE':
-        log += colors.black.bgRed(getDialect(to, park)); break;       
-      default:
-        log += colors.white(getDialect('MALLOY', park));
-    }
+    log += getDialect(to, park);
     
     log += ' | ' + dateFormat(Date.now(), dateformat); 
     log += ' | ' + location;
@@ -60,9 +48,30 @@ var Malloy = function Malloy(config) {
     return log;
   }
 
+  that.buildFullMsgInBrickleberry = function(msg, to, config) {
+    var config = config || {},
+        log = '| ',
+        to = to.toUpperCase(),
+        dateformat = config.dateformat || that.defaults.dateformat,
+        location = config.location || that.defaults.location,
+        park = config.park || that.defaults.park;
+     
+    to = to === 'MALLOY' ? 'himself' : getDialect(to, park);
+    log += 'Malloy is saying to ' + to + ' "' + msg;
+    log += '" at ' + dateFormat(Date.now(), dateformat) + ' near ' + location;
+    return log;
+  }
+
   that.log = function(msg, to, config) {
     var file = (config && config.storage) || that.defaults.storage,
-        fullMsg = that.buildFullMsg(msg, to, config);
+        park = (config && config.park) || that.defaults.park,
+        fullMsg = '';
+
+    if (park === 'yellowstone') {    
+      fullMsg = that.buildFullMsgInYellowstone(msg, to, config);
+    } else {
+      fullMsg = that.buildFullMsgInBrickleberry(msg, to, config);
+    }
 
     if (file !== 'STDOUT' && fs.existsSync(path.dirname(file))) {
       let stream = fs.createWriteStream(file, {'flags' : 'a'});
