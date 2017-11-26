@@ -3,10 +3,11 @@
     <img width="400" src="https://github.com/torokmark/malloy/blob/master/brickleberry.jpg" alt="Brickleberry">
     <br>
     <br>
+    Malloy.js
 </h1>
 
 
-# malloy.js
+
 
 Malloy.js is a tiny, cute, cub library for logging inspired by the famous and celebrated sitcom series Brickleberry.
 
