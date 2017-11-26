@@ -1,6 +1,6 @@
 {
   "name": "malloy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Malloy is a cub logging lib",
   "main": "malloy",
   "repository": {
