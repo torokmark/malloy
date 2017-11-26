@@ -1,6 +1,14 @@
+<h1 align="center">
+    <img width="220" height=220 src="https://github.com/torokmark/malloy/blob/master/malloy.jpg" alt="Malloy">
+    <img width="400" src="https://github.com/torokmark/malloy/blob/master/brickleberry.jpg" alt="Brickleberry">
+    <br>
+    <br>
+</h1>
+
+
 # malloy.js
 
-Malloy.js is a tiny, cute, cub library for logging.
+Malloy.js is a tiny, cute, cub library for logging inspired by the famous and celebrated sitcom series Brickleberry.
 
 Levels:
 * `Malloy` informs the forrest!
@@ -17,7 +25,7 @@ npm install malloy
 
 ## Usage
 
-```
+```javascript
 var malloy = require('malloy');
     adoptedMalloy = require('malloy').adopt({location: __filename, park: 'yellowstone', storage: '/home/username/log.out', dateformat: 'isoTime'});
 
