@@ -11,6 +11,8 @@
 
 Malloy.js is a tiny, cute, cub library for logging inspired by the famous and celebrated sitcom series Brickleberry.
 
+[![Build Status](https://travis-ci.org/torokmark/malloy.svg?branch=master)](https://travis-ci.org/torokmark/malloy)
+
 Levels:
 * `Malloy` informs the forrest!
 * `Denzel` debugs it!
