@@ -15,6 +15,7 @@ Malloy.js is a tiny, cute, cub library for logging inspired by the famous and ce
 [![Build Status](https://travis-ci.org/torokmark/malloy.svg?branch=master)](https://travis-ci.org/torokmark/malloy)
 [![Github All Releases](https://img.shields.io/github/downloads/torokmark/malloy/total.svg)](https://github.com/torokmark/malloy/)
 [![GitHub license](https://img.shields.io/github/license/torokmark/malloy.svg)](https://github.com/torokmark/malloy/blob/master/LICENSE)
+[![Say Thanks!](https://img.shields.io/badge/SayThanks-!-1EAEDB.svg)](https://saythanks.io/to/torokmark)
 
 Levels:
 * `Malloy` informs the forrest!
