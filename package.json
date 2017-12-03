@@ -28,6 +28,6 @@
   },
   "scripts": {
     "start": "node demo",
-    "test": "mocha test"
+    "test": "mocha"
   }
 }
