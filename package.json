@@ -24,7 +24,8 @@
     "mocha": ">=4.0.0"
   },
   "engines": {
-    "node": "*"
+    "node": ">=6.12.0",
+    "npm": ">=3.10.10"
   },
   "scripts": {
     "start": "node demo",
