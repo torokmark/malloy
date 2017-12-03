@@ -2,7 +2,7 @@
   "name": "malloy",
   "version": "1.0.0",
   "description": "Malloy is a cub logging lib",
-  "main": "malloy",
+  "main": "lib/malloy",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/torokmark/malloy.git"
@@ -20,12 +20,14 @@
   "homepage": "https://github.com/torokmark/malloy#readme",
   "devDependencies": {
     "dateformat": ">=3.0.2",
-    "colors": ">=1.1.2"
+    "colors": ">=1.1.2",
+    "mocha": ">=4.0.0"
   },
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "start": "node demo"
+    "start": "node demo",
+    "test": "mocha test"
   }
 }

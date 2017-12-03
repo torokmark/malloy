@@ -3,4 +3,6 @@
 sudo npm link
 sudo npm link malloy
 
-npm run start
+npm start
+
+npm test
