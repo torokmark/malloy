@@ -1,13 +1,9 @@
-<h1 align="center">
+<p align="center">
     <img width="220" height=220 src="https://github.com/torokmark/malloy/blob/master/pic/malloy.jpg" alt="Malloy">
     <img width="400" src="https://github.com/torokmark/malloy/blob/master/pic/brickleberry.jpg" alt="Brickleberry">
     <br>
     <br>
-    Malloy.js
-</h1>
-
-
-
+    <h1>Malloy.js</h1>
 
 Malloy.js is a tiny, cute, cub library for logging inspired by the famous and celebrated sitcom series Brickleberry.
 
@@ -17,6 +13,7 @@ Malloy.js is a tiny, cute, cub library for logging inspired by the famous and ce
 [![GitHub license](https://img.shields.io/github/license/torokmark/malloy.svg)](https://github.com/torokmark/malloy/blob/master/LICENSE)
 [![Known Vulnerabilities](https://snyk.io/test/github/torokmark/malloy/badge.svg)](https://snyk.io/test/github/torokmark/malloy)
 [![Say Thanks!](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/torokmark)
+</p>
 
 Levels:
 * `Malloy` informs the forrest!
